@@ -1,0 +1,260 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/macbookair/Documents/SV20T1020051/SV20T1020051.Web/SV20T1020051.Web.csproj": {}
+  },
+  "projects": {
+    "/Users/macbookair/Documents/SV20T1020051/SV20T1020051.BusinessLayers/SV20T1020051.BusinessLayers.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/macbookair/Documents/SV20T1020051/SV20T1020051.BusinessLayers/SV20T1020051.BusinessLayers.csproj",
+        "projectName": "SV20T1020051.BusinessLayers",
+        "projectPath": "/Users/macbookair/Documents/SV20T1020051/SV20T1020051.BusinessLayers/SV20T1020051.BusinessLayers.csproj",
+        "packagesPath": "/Users/macbookair/.nuget/packages/",
+        "outputPath": "/Users/macbookair/Documents/SV20T1020051/SV20T1020051.BusinessLayers/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/macbookair/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/macbookair/Documents/SV20T1020051/SV20T1020051.DataLayers/SV20T1020051.DataLayers.csproj": {
+                "projectPath": "/Users/macbookair/Documents/SV20T1020051/SV20T1020051.DataLayers/SV20T1020051.DataLayers.csproj"
+              },
+              "/Users/macbookair/Documents/SV20T1020051/SV20T1020051.DomainModels/SV20T1020051.DomainModels.csproj": {
+                "projectPath": "/Users/macbookair/Documents/SV20T1020051/SV20T1020051.DomainModels/SV20T1020051.DomainModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/macbookair/Documents/SV20T1020051/SV20T1020051.DataLayers/SV20T1020051.DataLayers.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/macbookair/Documents/SV20T1020051/SV20T1020051.DataLayers/SV20T1020051.DataLayers.csproj",
+        "projectName": "SV20T1020051.DataLayers",
+        "projectPath": "/Users/macbookair/Documents/SV20T1020051/SV20T1020051.DataLayers/SV20T1020051.DataLayers.csproj",
+        "packagesPath": "/Users/macbookair/.nuget/packages/",
+        "outputPath": "/Users/macbookair/Documents/SV20T1020051/SV20T1020051.DataLayers/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/macbookair/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/macbookair/Documents/SV20T1020051/SV20T1020051.DomainModels/SV20T1020051.DomainModels.csproj": {
+                "projectPath": "/Users/macbookair/Documents/SV20T1020051/SV20T1020051.DomainModels/SV20T1020051.DomainModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.15, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/macbookair/Documents/SV20T1020051/SV20T1020051.DomainModels/SV20T1020051.DomainModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/macbookair/Documents/SV20T1020051/SV20T1020051.DomainModels/SV20T1020051.DomainModels.csproj",
+        "projectName": "SV20T1020051.DomainModels",
+        "projectPath": "/Users/macbookair/Documents/SV20T1020051/SV20T1020051.DomainModels/SV20T1020051.DomainModels.csproj",
+        "packagesPath": "/Users/macbookair/.nuget/packages/",
+        "outputPath": "/Users/macbookair/Documents/SV20T1020051/SV20T1020051.DomainModels/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/macbookair/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/macbookair/Documents/SV20T1020051/SV20T1020051.Web/SV20T1020051.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/macbookair/Documents/SV20T1020051/SV20T1020051.Web/SV20T1020051.Web.csproj",
+        "projectName": "SV20T1020051.Web",
+        "projectPath": "/Users/macbookair/Documents/SV20T1020051/SV20T1020051.Web/SV20T1020051.Web.csproj",
+        "packagesPath": "/Users/macbookair/.nuget/packages/",
+        "outputPath": "/Users/macbookair/Documents/SV20T1020051/SV20T1020051.Web/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/macbookair/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/macbookair/Documents/SV20T1020051/SV20T1020051.BusinessLayers/SV20T1020051.BusinessLayers.csproj": {
+                "projectPath": "/Users/macbookair/Documents/SV20T1020051/SV20T1020051.BusinessLayers/SV20T1020051.BusinessLayers.csproj"
+              },
+              "/Users/macbookair/Documents/SV20T1020051/SV20T1020051.DataLayers/SV20T1020051.DataLayers.csproj": {
+                "projectPath": "/Users/macbookair/Documents/SV20T1020051/SV20T1020051.DataLayers/SV20T1020051.DataLayers.csproj"
+              },
+              "/Users/macbookair/Documents/SV20T1020051/SV20T1020051.DomainModels/SV20T1020051.DomainModels.csproj": {
+                "projectPath": "/Users/macbookair/Documents/SV20T1020051/SV20T1020051.DomainModels/SV20T1020051.DomainModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

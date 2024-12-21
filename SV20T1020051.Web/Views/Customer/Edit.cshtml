@@ -1,0 +1,82 @@
+﻿@model SV20T1020051.DomainModels.Customer
+@{
+
+}
+
+<div class="box box-primary">
+    <div class="box-body">
+        <form action="~/Customer/Save" method="post">
+            <input type="hidden" name="CustomerID" value="@Model.CustomerID"/>
+            <div class="form-group">
+                <label>Tên khách hàng:</label>
+                <input autofocus type="text" class="form-control" name="CustomerName" value="@Model.CustomerName">
+                @*@Html.TextBoxFor(m => m.CustomerName, new {@class="form-control", @autofocus="true"})*@
+                @Html.ValidationMessage(nameof(Model.CustomerName), new {@style = "color:#f00"})
+            </div>
+            <div class="form-group">
+                <label for="pwd">Tên giao dịch:</label>
+                <input type="text" class="form-control" name="ContactName" value="@Model.ContactName">
+                @Html.ValidationMessage(nameof(Model.ContactName), new { @style = "color:#f00" })
+            </div>
+            <div class="form-group">
+                <label for="pwd">Số điện thoại:</label>
+                <input type="text" class="form-control" name="Phone" value="@Model.Phone">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Email:</label>
+                <input type="email" class="form-control" name="Email" value="@Model.Email">
+                @Html.ValidationMessage(nameof(Model.Email), new { @style = "color:#f00" })
+            </div>
+            <div class="form-group">
+                <label for="pwd">Địa chỉ:</label>
+                <input type="text" class="form-control" name="Address" value="@Model.Address">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Tỉnh thành:</label>
+                @*<select name="Province" class="form-control">
+                    <option value="">-- Chọn tỉnh thành --</option>
+                    @foreach (var item in CommonDataService.ListOfProvinces())
+                        if (item.ProvinceName == Model.Province)
+                        {
+                            <option value="@item.ProvinceName" selected>@item.ProvinceName</option>
+                        }
+                        else
+                        {
+                            <option value="@item.ProvinceName">@item.ProvinceName</option>
+                        }
+                </select>*@
+                @Html.DropDownListFor(m => m.Province, SelectListHelper.Provinces(), new { @class = "form-control select2" })
+                @Html.ValidationMessage(nameof(Model.Province), new { @style = "color:#f00" })
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2">Trạng thái:</label>
+                @*<select class="form-control" name="IsLocked">
+            @if (Model.IsLocked)
+             {
+                <option value="true" selected>Tai khoan bi khoa</option>
+                <option value="false">Tai khoan khong bi khoa</option>
+             }
+            else
+            {
+                <option value="true">Tai khoan bi khoa</option>
+                <option value="false" selected>Tai khoan khong bi khoa</option>
+            }
+        </select>*@
+                <div class="form-group col-sm-10">
+                    <label class="radio-inline"><input type="radio" name="IsLocked" value="false" @(Model.IsLocked ? "" : "checked")>Hoạt động</label>
+                    <label class="radio-inline"><input type="radio" name="IsLocked" value="true" @(Model.IsLocked ? "checked" : "")>Vô hiệu hoá</label>
+                </div>
+            </div>
+            
+            <div >
+                @Html.ValidationMessage("Error", new { @style = "color:#f00" })
+            </div>
+                @*Button action*@
+                <div class="form-group text-right">
+                    <button class="btn btn-info" type="submit"><i class="fa fa-floppy-o"></i> Lưu dữ liệu</button>
+                    <a href="~/Customer" class="btn btn-default">Quay lại</a>
+                </div>
+        </form>
+    </div>
+</div>
+

@@ -1,0 +1,60 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>55ac054d-da59-4601-973d-16abbe0ce348</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\themes\" />
+    <Content Remove="wwwroot\images\" />
+    <Content Remove="wwwroot\images\employees\" />
+    <Content Remove="wwwroot\images\products\" />
+    <Content Remove="wwwroot\images\categories\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\themes\" />
+    <Folder Include="Views\Customer\" />
+    <Folder Include="Views\Category\" />
+    <Folder Include="Views\Supplier\" />
+    <Folder Include="Views\Shipper\" />
+    <Folder Include="Views\Employee\" />
+    <Folder Include="wwwroot\images\" />
+    <Folder Include="wwwroot\images\employees\" />
+    <Folder Include="Views\Product\" />
+    <Folder Include="wwwroot\images\products\" />
+    <Folder Include="Views\Order\" />
+    <Folder Include="Views\Account\" />
+    <Folder Include="Views\Test\" />
+    <Folder Include="AppCodes\" />
+    <Folder Include="wwwroot\images\categories\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\Customer\" />
+    <None Remove="Views\Category\" />
+    <None Remove="Views\Supplier\" />
+    <None Remove="Views\Shipper\" />
+    <None Remove="Views\Employee\" />
+    <None Remove="Views\Product\" />
+    <None Remove="Views\Order\" />
+    <None Remove="Views\Account\" />
+    <None Remove="Views\Test\" />
+    <None Remove="AppCodes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SV20T1020051.DataLayers\SV20T1020051.DataLayers.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\SV20T1020051.DomainModels\SV20T1020051.DomainModels.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\SV20T1020051.BusinessLayers\SV20T1020051.BusinessLayers.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+</Project>
